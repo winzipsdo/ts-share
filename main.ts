@@ -4,5 +4,5 @@ require('@babel/register')({
 });
 
 // require('./example/2 - Promise');
-// require('./example/4 - Vue');
-require('./example/5 - $refs');
+require('./example/4 - npm包');
+// require('./example/5 - Vue');
