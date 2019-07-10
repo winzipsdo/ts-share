@@ -1,0 +1,29 @@
+{
+  "name": "ts-share",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".prettierrc.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node main.ts",
+    "s": "npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.3",
+    "@babel/register": "^7.4.4",
+    "@types/node": "^12.6.1",
+    "vue-typed-mixins": "^0.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "vue": "^2.6.10"
+  },
+  "browserslist": "> 0.25%, not dead"
+}
