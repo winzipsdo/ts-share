@@ -25,9 +25,9 @@ axios.interceptors.response.use((res) => res.data);
 // 可以进行自定义的赋值
 // axios.cancel = 1;
 
-function apiGetCourseInfoAny(): Promise<any> {
-  return axios.get('https://growth.xueersi.com/order/courseinfo?courseId=67051');
-}
+// function apiGetCourseInfoAny(): Promise<any> {
+//   return axios.get('https://growth.xueersi.com/order/courseinfo?courseId=67051');
+// }
 
 // apiGetCourseInfoAny().then((res) => {
 //   console.log(res);
@@ -44,9 +44,9 @@ function apiGetCourseInfoTyped0(): Promise<GrowthResponse> {
   return axios.get('https://growth.xueersi.com/order/courseinfo?courseId=67051');
 }
 
-// apiGetCourseInfoTyped0().then((res) => {
-//   console.log(res);
-// });
+apiGetCourseInfoTyped0().then((res) => {
+  console.log(res);
+});
 
 interface CourseInfoResponse extends GrowthResponse {
   data: {
@@ -59,6 +59,6 @@ function apiGetCourseInfoTyped1(): Promise<CourseInfoResponse> {
   return axios.get('https://growth.xueersi.com/order/courseinfo?courseId=67051');
 }
 
-// apiGetCourseInfoTyped1().then((res) => {
-//   console.log(res.data.subjectName);
-// });
+apiGetCourseInfoTyped1().then((res) => {
+  console.log(res.data.grade_ids);
+});

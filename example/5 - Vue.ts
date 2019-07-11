@@ -27,28 +27,32 @@ import Vue from 'vue';
 import { userInfo } from '@/1 - 类型推断';
 
 // extend函数附带类型推导
-// const component = Vue.extend({
-//   props: {
-//     propA: {
-//       type: Number,
-//       default: () => 1,
-//     },
-//     userInfo: {
-//       type: Object as () => userInfo,
-//       default: () => ({
-//         phone: '153****0897',
-//         sms_code: '123123',
-//       }),
-//     },
-//   },
-//   data() {
-//     return {
-//       attrA: 1,
-//       attrB: '2',
-//     };
-//   },
-//   created() {
-//     this.propA;
-//     this.userInfo.phone = 1
-//   },
-// });
+const component = Vue.extend({
+  props: {
+    propA: {
+      type: Number,
+      default: () => 1,
+    },
+    userInfo: {
+      type: Object as () => userInfo,
+      default() {
+        return {
+          phone: '153****0897',
+          sms_code: '123123',
+        };
+      },
+    },
+  },
+  data() {
+    return {
+      attrA: 1,
+      attrB: '2',
+    };
+  },
+  created() {
+    this.attrA;
+    this.propA;
+    // this.userInfo.
+    // this.userInfo. = 1
+  },
+});

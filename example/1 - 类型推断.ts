@@ -1,5 +1,12 @@
 // 隐式类型推断
 
+// let userInfo = {
+//   phone: '18811719709',
+//   sms_code: '668899',
+// };
+
+// userInfo.phone = 1;
+
 export interface userInfo {
   phone: string;
   sms_code: string;
@@ -14,7 +21,7 @@ let userInfo: userInfo = {
 // userInfo.phone = 1;
 
 // 在对象中使用
-// const a: userInfo = { phone: 1 };
+// const a: userInfo = { phone: '1' };
 
 // 在数组中使用
 // const a: userInfo[] = [{}];

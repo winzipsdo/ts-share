@@ -11,12 +11,14 @@
     "start": "ts-node main.ts",
     "s": "npm run start"
   },
+  "typings": "./types/index.d.ts",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.3",
+    "@babel/preset-typescript": "^7.3.3",
     "@babel/register": "^7.4.4",
     "@types/md5": "^2.1.33",
     "@types/node": "^12.6.1",

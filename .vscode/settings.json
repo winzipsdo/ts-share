@@ -1,8 +1,7 @@
 {
-  "vetur.format.defaultFormatter.html": "prettier",
   "editor.quickSuggestionsDelay": 0,
-  "javascript.suggestionActions.enabled": false,
-  "javascript.validate.enable": false,
+  "javascript.suggestionActions.enabled": true,
+  "javascript.validate.enable": true,
   "typescript.suggest.enabled": true,
   "typescript.validate.enable": true,
   "editor.formatOnSave": true,
